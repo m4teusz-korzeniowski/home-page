@@ -8,6 +8,7 @@
     background-color: sandybrown;
     border-style: solid;
     border-bottom-style: none;
+    height: 30px;
 }
 
 .main-container {
@@ -127,5 +128,29 @@
 
     .third-container{
         margin-left: 20px;
+    }
+}
+
+@media (min-width: 583px) and (max-width: 900px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 180px 140px;
+        grid-template-rows: auto auto;
+    }
+
+    .first-container {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .second-container {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: -15px;
+    }
+
+    .third-container {
+        grid-column: 2;
+        grid-row: 1 / span 2;
     }
 }
