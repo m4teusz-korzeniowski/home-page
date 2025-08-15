@@ -55,6 +55,7 @@
     align-items: center;
     width: 180px;
     background-color: white;
+    margin-top: calc((180px / 2) - (50px / 2));
 }
 
 .circle {
