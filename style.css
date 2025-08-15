@@ -97,6 +97,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    background-color: wheat;
 }
 
 .big-rectangle {
@@ -111,4 +112,20 @@
     padding-top: 10px;
     font-size: 24px;
     text-align: center;
+}
+
+@media (max-width: 582px) {
+    .main-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+    }
+
+    .second-container {
+        margin-top: 20px;
+    }
+
+    .third-container{
+        margin-left: 20px;
+    }
 }
