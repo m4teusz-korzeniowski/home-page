@@ -26,7 +26,6 @@
     position: relative;
     width: 180px;
     aspect-ratio: 1 / 1;
-    background-color: gray;
 }
 
 .square {
@@ -36,7 +35,7 @@
     background-color: red;
     transform: rotate(45deg);
     transform-origin: center;
-    border: solid black;
+    border-style: solid;
 }
 
 .square1 {
@@ -54,7 +53,6 @@
     display: flex;
     align-items: center;
     width: 180px;
-    background-color: white;
     margin-top: calc((180px / 2) - (50px / 2));
 }
 
@@ -98,7 +96,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: wheat;
 }
 
 .big-rectangle {
