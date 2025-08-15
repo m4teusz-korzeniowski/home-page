@@ -5,17 +5,21 @@
 
 .navbar {
     background-color: sandybrown;
+    border-style: solid;
+    border-bottom-style: none;
 }
 
 .main-container {
     height: 400px;
     background-color: green;
+    border-style: solid;
 }
 
 .first-container {
     position: relative;
     width: 180px;
     height: 180px;
+    background-color: gray;
 }
 
 .square {
@@ -40,4 +44,45 @@
 .square2 {
     bottom: var(--offset);
     left: var(--offset);
+}
+
+
+.second-container {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    background-color: white;
+}
+
+.circle {
+    background-color: paleturquoise;
+    border-style: solid;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.parallels {
+    position: relative;
+    width: 110px;
+    height: 50px;
+}
+
+.rectangle {
+    position: absolute;
+    width: 75px;
+    height: 10px;
+    background-color: blue;
+    left: 10px;
+    border-style: solid;
+}
+
+.rectangle-top {
+    top: 5px;
+}
+
+.rectangle-bottom {
+    bottom: 5px;
 }
