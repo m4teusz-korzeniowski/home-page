@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -13,40 +14,38 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    height: 400px;
+    height: 335px;
     background-color: green;
     border-style: solid;
+    box-sizing: border-box;
 }
+
 
 .first-container {
     position: relative;
     width: 180px;
-    height: 180px;
+    aspect-ratio: 1 / 1;
     background-color: gray;
 }
 
 .square {
     position: absolute;
-    width: 75px;
-    height: 75px;
+    width: 40%;
+    aspect-ratio: 1 / 1;
     background-color: red;
     transform: rotate(45deg);
     transform-origin: center;
-    border-style: solid;
-}
-
-:root {
-    --offset: calc(80px * (sqrt(2) / 2 - 0.5));
+    border: solid black;
 }
 
 .square1 {
-    top: var(--offset);
-    right: var(--offset);
+    top: 10%;
+    right: 10%;
 }
 
 .square2 {
-    bottom: var(--offset);
-    left: var(--offset);
+    bottom: 10%;
+    left: 10%;
 }
 
 
@@ -95,7 +94,6 @@
     width: 140px;
     padding: 10px;
     box-sizing: border-box;
-    background-color: wheat;
     display: flex;
     justify-content: center;
     align-items: flex-start;
